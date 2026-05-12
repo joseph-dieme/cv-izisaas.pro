@@ -1,14 +1,14 @@
 /* Variables */
 :root {
-    --primary: #0052FF;
-    --primary-light: #4D8BFF;
-    --primary-dark: #003ECC;
-    --bg-color: #FFFFFF;
-    --bg-light: #F8FAFC;
-    --text-main: #0F172A;
-    --text-muted: #64748B;
-    --border-color: #E2E8F0;
-    --card-bg: rgba(255, 255, 255, 0.8);
+    --primary: #D4AF37;       /* Gold */
+    --primary-light: #F3E5AB; /* Light Gold */
+    --primary-dark: #AA8C2C;  /* Dark Gold */
+    --bg-color: #0A0A0A;      /* Deep Black */
+    --bg-light: #1A1A1A;      /* Dark Gray */
+    --text-main: #FFFFFF;     /* White text */
+    --text-muted: #A0A0A0;    /* Muted text */
+    --border-color: #333333;  /* Dark border */
+    --card-bg: rgba(26, 26, 26, 0.8);
     --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -168,7 +168,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(226, 232, 240, 0.5);
@@ -419,10 +419,10 @@ ul {
 }
 
 .stat-card {
-    background: white;
+    background: var(--bg-light);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     border: 1px solid var(--border-color);
     transition: var(--transition);
 }
@@ -468,12 +468,12 @@ ul {
 }
 
 .exp-card {
-    background: white;
+    background: var(--bg-light);
     padding: 40px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     border: 1px solid var(--border-color);
     transition: var(--transition);
     z-index: 1;
@@ -587,7 +587,7 @@ ul {
 .contact-title {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: white;
+    color: var(--text-main);
 }
 
 .contact-desc {
